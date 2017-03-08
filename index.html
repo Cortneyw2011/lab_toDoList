@@ -18,7 +18,7 @@
     <br><br>
     <button ng-click = 'addItem()'>Add Items to List</button>
     <ul >
-      <li ng-repeat = "item in listItems">{{item}}</li>
+      <li ng-repeat = "item in listItems | filter: newItem"  >{{item}}</li>
     </ul>
 
 
